@@ -1,1 +1,401 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" class="freelancer uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40 bp-xs bp-s bp-m bp-l bp-xl uk-dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OneWay Digital</title>
+        
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="manifest" href="site.webmanifest.html">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="theme-color" content="#000000">
+        <meta name="description" content="OneWay is an innovative digital agency based in Ireland. We exist to help people discover, define and develop their visions and ambitions through the digital world.">
+
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="assets/fonts/brand-icons/brand-icons.woff2.html" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" as="style">
+        <link rel="preload" href="assets/css/main.css" as="style">
+
+        <script src="assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    
+    </head>
+    <body>
+
+
+        <!-- Menu modal -->
+        <div id="uni-menu-modal" class="uk-modal-full" data-uk-modal="">
+            <div class="uk-modal-dialog">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-flex-center" data-uk-height-viewport="">
+                        <ul class="uk-list uk-list-large uk-h2 uk-h1@m uk-text-center" data-uk-scrollspy-nav="closest: li; offset: 40; scroll: true;">
+                            <li><a href="index.html#about">Graphic Design.</a></li>
+                            <li><a href="index.html#works">Web Development.</a></li>
+                            <li><a href="index.html#clients">Graphic Design.</a></li>
+                            <li><a href="index.html#insights">E-Commerce.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start a project form -->
+        <div id="start-project" class="uk-modal-full" data-uk-modal="">
+            <div class="uk-modal-dialog dark:uk-background-gray-100 contact-outer" data-uk-height-viewport="">
+                <button class="uk-modal-close-full uk-close-large uk-flex-middle dark:uk-text-gray-10" type="button">
+                    <span class="uk-text-bold">Close</span>
+                    <i class="material-icons uk-icon-medium">close</i>
+                </button>
+                <div class="uk-section uk-section-2xlarge@m" style="height: 100vh;">
+                    <div class="uk-margin-auto uk-width-xlarge@m">
+                        <header class="uk-panel uk-text-center main-contact-header">
+                            <h2 class="uk-h3 uk-h1@m">Start a project</h2>
+                        </header>
+                        <form class="uk-form-stacked main-contact uk-margin-large-top@m" method="post" action="https://script.google.com/macros/s/AKfycbyBcVM9QCI07_URXOfq5EIoPso4dDq2nWUfHT8gTPB_f99kyK0a7HqlPZOiFwu5s2K8Rg/exec">
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-fullname">Full Name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" name="fullName" id="form-fullname" type="text" placeholder="Your name" required>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-email">Email Address</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" name="email" id="form-email" type="email" placeholder="Your email" required>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline">Looking for:</label>
+                                <div class="uk-panel uk-panel-scrollable uk-text-small uk-height-xsmall dark:uk-border-gray-90">
+                                    <ul class="uk-list">
+                                        <li><label><input class="uk-checkbox" name="branding" value="✓" type="checkbox"> Branding</label></li>
+                                        <li><label><input class="uk-checkbox" name="webdesign" value="✓" type="checkbox"> Web Design</label></li>
+                                        <li><label><input class="uk-checkbox" name="webdevelopment" value="✓" type="checkbox"> Web Development</label></li>
+                                        <li><label><input class="uk-checkbox" name="ecommerce" value="✓" type="checkbox"> E-Commerce</label></li>
+                                        <li><label><input class="uk-checkbox" name="seo" value="✓" type="checkbox"> SEO</label></li>
+                                        <li><label><input class="uk-checkbox" name="maintenance-other" value="✓" type="checkbox"> Maintenance / Other</label></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-budget">Your Budget:</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-form-large" name="budget" id="form-budget" type="text" placeholder="ex: +€1000" required>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-overline" for="form-brief">Brief:</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" name="brief" id="form-brief" placeholder="Please go into as much detail as possible." rows="5" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin-medium">
+                                <button class="submit-button uk-button uk-button-large uk-button-primary uk-width-expand dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80" type="submit">Send Brief</button>
+                            </div>
+
+                        </form>
+                        <p class="uk-text-meta uk-text-center">If you would rather contact me, you can call me on +353 87 405 5232.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div id="success-md" class="uk-modal-full" data-uk-modal="" style="z-index: 99999 !important;">
+            <div class="uk-modal-dialog dark:uk-background-gray-100 uk-flex-middle uk-flex-center" data-uk-height-viewport="">
+                <div class="uk-width-2xlarge@m uk-margin-auto uk-text-center">
+                    <h3 class="uk-heading-xlarge material-icons"><i class="material-icons" style="font-size: 200px;">check_circle</i></h3>
+                    <h1 class="uk-heading-medium">Thank you for reaching out</h1>
+                    <p>We'll be in touch soon</p>
+                    <button class="uk-button uk-button-large uk-button-primary uk-margin-medium-top uk-margin-xlarge-top@m dark:uk-button-primary-invert" onclick="UIkit.modal('#success-md').hide()">
+                        <span class="material-icons-round">arrow_back</span>
+                        <span>Back to site</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+<!-- Hero -->
+<div id="overview" class="uni-hero uk-panel uk-overflow-hidden">
+
+    <div class="uk-container uk-position-cover uk-visible@m" data-uk-height-viewport="">
+
+        <!-- Background image -->
+        <img src="assets/images/heros/light_streaks.jpg" alt="image" class="uk-cover" style="width: 1100px; filter: grayscale(0); left: 80%;">
+
+    </div>
+
+
+        <!-- Navigation -->
+    <header class="uni-header uk-position-top">
+        <div class="uni-header-navbar uk-scrollnav-header">
+            <div class="uk-container uk-container-large">
+                <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar="">
+                    <div class="uk-navbar-top">
+                        <div class="uk-navbar-left uk-flex-1">
+                            <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="index.html#">
+                                <img width="80" src="assets/images/logo/logo_2.svg" style="filter: drop-shadow(5px 10px 5px #0b0b0b);" alt="OneWay">
+                            </a>
+                            <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="index.html#">
+                                <img width="70" src="assets/images/logo/logo_2.svg" alt="OneWay">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-center">
+                            <ul class="uk-navbar-nav uk-visible@m dark:uk-text-gray-10">
+                                <li class="uk-active"><a href="index.html">Home</a></li>
+                                <li><a href="index.html#about" data-uk-scroll="offset: 50;">About</a></li>
+                                <li><a href="index.html#services" data-uk-scroll="offset: 50;">Services</a></li>
+                                <li><a href="index.html#start-project" data-uk-toggle="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                            <div class="uk-navbar-item uk-visible@m">
+                                <a href="https://customers-internal.oneway.ie/" class="uk-link-expand uk-link-underline dark:uk-text-white">
+                                    <span class="uk-text-bold">Customer Area</span>
+                                    <i class="material-icons-round">arrow_forward</i>
+                                </a>
+                            </div>
+                            <div class="uk-navbar-item uk-hidden@m">
+                                <a class="uni-menu-trigger" href="index.html#uni-menu-modal" data-uk-toggle=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Hero: Content -->
+    <div class="uk-panel uk-overflow-hidden uk-position-z-index" id="hero">
+        <div class="uk-container">
+            <div class="uk-panel uk-section-2xlarge uk-flex-middle@s" data-uk-height-viewport="media: @s;">
+                <div class="uk-width-xlarge@m">
+                    <h2 class="uk-heading-medium uk-margin-medium-top uk-margin-remove-bottom dark:uk-text-gray-10">Unleash your<br>online presence with us.</h2>
+                    <a href="index.html#services" class="uk-button uk-button-large uk-button-primary uk-margin-medium-top uk-margin-xlarge-top@m dark:uk-button-primary-invert" data-uk-scroll="offset: 50;">
+                        <span class="material-icons-round">arrow_downward</span>
+                        <span>Our Services</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- About -->
+<div id="about" class="uk-section uk-section-2xlarge@m uk-background-white dark:uk-background-gray-100">
+    <div class="uk-container">
+        <div class="uk-grid uk-grid-row-3xlarge@m uk-child-width-1-1 uk-grid-stack" data-uk-grid="">
+            <div class="uk-first-column">
+                <div class="uk-grid-large uk-flex-between uk-flex-middle uk-grid uk-grid-stack" data-uk-grid="">
+                    <div class="uk-flex-first@m uk-first-column">
+                        <div class="uk-panel">
+                            <h2 class="uk-h3 uk-h1@m dark:uk-text-gray-10">We are One Way Digital</h2>
+                            <p class="uk-text-large uk-margin-top uk-margin-medium-top@m">We are a newly established digital agency, which means that we have a lot to prove. We are a small company, which means that we have the advantage of being able to offer our clients the best possible service and turnarounds. We specialize in web development and design, as well as online marketing and SEO. We are based in Dublin, Ireland, but we have a global reach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services -->
+<div id="services" class="uni-services uk-padding-2xlarge-bottom">
+    <div class="uk-container">
+        <h2 class="uk-h2 uk-h1@m">Our <span class="uk-text-primary dark:uk-text-gray-60">services</span></h2>
+        <div class="uk-grid-large uk-grid-xlarge@m uk-margin-xlarge-top uk-margin-2xlarge-top@m" data-uk-grid>
+            <div>
+                <div class="uk-card uk-card-default dark:uk-background-gray-90">
+                    <div class="uk-grid-collapse uk-grid-match" data-uk-grid>
+                        <div class="uk-width-expand@m">
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas width="784" height="588"></canvas>
+                                <img src="assets/images/services/design.jpg" alt="image" data-uk-cover>
+                                <div class="uk-hidden dark:uk-visible">
+                                    <div class="uk-position-cover uk-position-z-index uk-visible@m" style="background-image: linear-gradient(to right, var(--color-gray-90) 6.33%, rgb(26 26 26 / 89%) 26.94%, rgba(255, 255, 255, 0) 100%);"></div>
+                                    <div class="uk-position-cover uk-position-z-index uk-hidden@m" style="background-image: linear-gradient(to top, var(--color-gray-90) 6.33%, rgb(26 26 26 / 89%) 26.94%, rgba(255, 255, 255, 0) 100%);"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-6-12@m uk-flex-first@m">
+                            <div class="uk-panel uk-card-small uk-card-xlarge@m uk-padding-remove-right@m uk-flex-column uk-flex-between">
+                                <div class="uk-panel">
+                                    <h3 class="uk-h3 uk-h1@m uk-margin-large-top@m">Graphic Design.</h3>
+                                    <p class="uk-text-small uk-text-medium@m uk-text-gray-70 dark:uk-text-gray-40">Be it a website, a business card or a print project, we’ve got you covered. We’re a one-stop-shop for all your graphic design and marketing needs.</p>
+                                </div>
+                                <div class="uk-margin-top">
+                                    <a href="index.html#" class="uk-button uk-hidden uk-button-large@m uk-button-primary">
+                                        <span class="material-icons-round">arrow_forward</span>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default dark:uk-background-gray-90">
+                    <div class="uk-grid-collapse uk-grid-match" data-uk-grid>
+                        <div class="uk-width-expand@m">
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas width="784" height="588"></canvas>
+                                <img src="assets/images/services/e-commerce.jpg" alt="image" data-uk-cover>
+                                <div class="uk-hidden dark:uk-visible">
+                                    <div class="uk-position-cover uk-position-z-index uk-visible@m" style="background-image: linear-gradient(to right, var(--color-gray-90) 6.33%, rgb(26 26 26 / 89%) 26.94%, rgba(255, 255, 255, 0) 100%);"></div>
+                                    <div class="uk-position-cover uk-position-z-index uk-hidden@m" style="background-image: linear-gradient(to top, var(--color-gray-90) 6.33%, rgb(26 26 26 / 89%) 26.94%, rgba(255, 255, 255, 0) 100%);"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-6-12@m uk-flex-first@m">
+                            <div class="uk-panel uk-card-small uk-card-xlarge@m uk-padding-remove-right@m uk-flex-column uk-flex-between">
+                                <div class="uk-panel">
+                                    <h3 class="uk-h3 uk-h1@m uk-margin-large-top@m">E-commerce.</h3>
+                                    <p class="uk-text-small uk-text-medium@m uk-text-gray-70 dark:uk-text-gray-40">We create all types of custom solutions, from small business websites to complex e-commerce platforms, that help you streamline your business processes.</p>
+                                </div>
+                                <div class="uk-margin-top">
+                                    <a href="index.html#" class="uk-button uk-hidden uk-button-large@m uk-button-primary">
+                                        <span class="material-icons-round">arrow_forward</span>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default dark:uk-background-gray-90">
+                    <div class="uk-grid-collapse uk-grid-match" data-uk-grid>
+                        <div class="uk-width-expand@m">
+                            <div class="uk-panel uk-overflow-hidden">
+                                <canvas width="784" height="588"></canvas>
+                                <img src="assets/images/services/development.jpg" alt="image" data-uk-cover>
+                                <div class="uk-hidden dark:uk-visible">
+                                    <div class="uk-position-cover uk-position-z-index uk-visible@m" style="background-image: linear-gradient(to right, var(--color-gray-90) 6.33%, rgb(26 26 26 / 89%) 26.94%, rgba(255, 255, 255, 0) 100%);"></div>
+                                    <div class="uk-position-cover uk-position-z-index uk-hidden@m" style="background-image: linear-gradient(to top, var(--color-gray-90) 6.33%, rgb(26 26 26 / 89%) 26.94%, rgba(255, 255, 255, 0) 100%);"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-6-12@m uk-flex-first@m">
+                            <div class="uk-panel uk-card-small uk-card-xlarge@m uk-padding-remove-right@m uk-flex-column uk-flex-between">
+                                <div class="uk-panel">
+                                    <h3 class="uk-h3 uk-h1@m uk-margin-large-top@m">Web Development.</h3>
+                                    <p class="uk-text-small uk-text-medium@m uk-text-gray-70 dark:uk-text-gray-40">We balance functionality, cutting-edge design and creativity to deliver the best solutions to increase engagement and help your business thrive.</p>
+                                </div>
+                                <div class="uk-margin-top">
+                                    <a href="index.html#" class="uk-button uk-hidden uk-button-large@m uk-button-primary">
+                                        <span class="material-icons-round">arrow_forward</span>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-flex-center@m uk-margin-large-top uk-margin-2xlarge-top@m">
+                <span>And more</span>
+        </div>
+    </div>
+</div>
+
+            <!-- Footer & CTA -->
+
+            <footer class="uni-cta-footer uk-section-large uk-background-gray-90 dark:uk-background-gray-90 dark:uk-text-gray-40 uk-dark">
+                <div class="uk-container">
+                    <div>
+                        <div>
+                            <div class="uk-section-large uk-section-2xlarge@m dark:uk-text-gray-10">
+                                <div class="uk-grid uk-grid-medium" data-uk-grid="">
+                                    
+                                    <div class="uk-width-7-12@m uk-first-column">
+                            <h2 class="uk-h1 uk-heading-hero@m">Let's talk.</h2>
+                            <a href="index.html#start-project" class="uk-button uk-button-large uk-button-primary uk-margin-top uk-margin-large-top@m dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80" data-uk-toggle="" aria-expanded="false">
+                                <span>Start a project</span>
+                                <span class="material-icons-round">arrow_forward</span>
+                            </a>
+                        </div><div class="uk-width-5-12@m">
+                                        <p class="uk-margin-remove">Newsletter</p>
+                                        <div class="uk-margin-top uk-margin-medium-top@m">
+                                            <form class="uk-form-stack" action="index.html#" method="POST">
+                                                <div class="uk-flex-column uk-flex-row@m">
+                                                    <div>
+                                                        <input type="email" name="email" required="" class="uk-input uk-form-medium uk-form-large@m uk-width-small@m uk-background-black-5 dark:uk-text-white dark:uk-background-white-10" placeholder="Your email address..">
+                                                    </div>
+                                                    <div class="uk-margin-small-top uk-margin-remove-top@m">
+                                                        <button type="submit" class="uk-button uk-button-medium uk-button-large@m uk-button-primary uk-width-expand uk-width-auto@m dark:uk-background-white dark:uk-text-gray-100 dark:hover:uk-background-gray-20 dark:hover:uk-text-gray-80">
+                                                            <span>Sign up</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="uk-margin-remove dark:uk-border-white-10">
+
+                            <div class="uk-margin-large-top">
+                                <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
+                                    <div class="uk-width-5-12@m">
+                                        <div class="uk-grid uk-child-width-1-2 uk-child-width-auto@m">
+                                            <div>
+                                                <a href="index.html#" class="uk-link-underline">Terms of service</a>
+                                            </div>
+                                            <div>
+                                                <a href="index.html#" class="uk-link-underline">Privacy Policy</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-expand@m uk-flex-first@m uk-first-column">
+                                        <span>2022 © OneWay Digital</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            </div>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXQVC43HGM"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FXQVC43HGM');
+        </script>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+        <script defer src="assets/js/responsive-uk-attr.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+        <script defer src="assets/js/app.js"></script>
+        <script defer src="assets/js/swiper-helper.js"></script>
+        <script defer src="assets/js/typed-helper.js"></script>
+        <script defer src="assets/js/anime-helper.js"></script>
+        <script defer src="assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+</html>
