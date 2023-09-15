@@ -398,5 +398,20 @@
         <script defer src="/assets/js/typed-helper.js"></script>
         <script defer src="/assets/js/anime-helper.js"></script>
         <script defer src="/assets/js/anime-helper-defined-timelines.js"></script>
+        <script>
+            $(document).ready(function() {
+                // Select all anchor elements with href containing "index.html"
+                $('a[href*="index.html"]').each(function() {
+                    // Get the current href attribute value
+                    var href = $(this).attr('href');
+                    
+                    // Remove "index.html" from the href attribute value
+                    href = href.replace('index.html', '');
+                    
+                    // Update the href attribute with the modified value
+                    $(this).attr('href', href);
+                });
+            });
+        </script>
     </body>
 </html>
